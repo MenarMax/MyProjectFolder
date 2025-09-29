@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block header %}
+<h2>{% block title %} {{accounts[0].bank_name}} Accounts{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h3>Here are your {{accounts[0].bank_name}} accounts, {{g.user['username']}} :</h2>
+
+<ul>
+  {% for account in accounts %}
+  <li>
+    {{account.name}} - Balance: ${{'%.2f'|format(account.balance)}}
+  </li>
+  {% else %}
+  <li>No accounts yet.</li>
+  {% endfor %}
+
+{% endblock %}

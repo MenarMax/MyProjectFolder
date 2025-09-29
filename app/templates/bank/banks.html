@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block header %}
+<h2>{% block title %}Bank Accounts{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h3>Here are your banks, {{g.user['username']}} :</h2>
+
+<ul>
+  {% for bank in banks %}
+  <li>
+    {{bank.name}} <a href="{{ url_for( 'bank.accounts', bank_name=bank['name']) }}">View Accounts</a>
+  </li>
+  {% else %}
+  <li>No bank accounts yet.</li>
+  {% endfor %}
+</ul>
+
+{% endblock %}

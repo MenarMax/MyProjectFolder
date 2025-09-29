@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block header %}
+<h2>{% block title %}Home Page{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+
+{% if g.user %}
+
+<ul>
+  <li>
+    <a href="{{ url_for('bank.bank_index') }}">Link for Money Management
+      Application</a>
+  </li>
+  <li>
+    <a href>Application #2</a>
+  </li>
+  <li>
+    <a href>Application #3</a>
+  </li>
+</ul>
+{% else %}
+<h3>Please log in or register.</h1>
+{%endif%}
+
+{% endblock %}

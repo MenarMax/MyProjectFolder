@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block header %}
+<h2>{% block title %}Money Management Application{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+<h3>Welcome to the Banking Application, {{g.user['username']}}.</h2>
+<p>Please see options bellow</p>
+
+<ul>
+  <li>
+    <a href="{{ url_for('bank.banks') }}">Your Banks</a>
+  </li>
+  <li>
+    <a href="">...</a>
+  </li>
+    <li>
+    <a href="">...</a>
+  </li>
+</ul>
+
+{% endblock %}
