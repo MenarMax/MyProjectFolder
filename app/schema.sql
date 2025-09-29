@@ -31,4 +31,5 @@ INSERT INTO bank (name)
 VALUES ('Tangerine'), ('RBC'), ('Desjardins'), ('Scotiabank'), ('BMO'), ('TD'), ('HSBC'), ('National Bank');
 
 INSERT INTO account (user_id, bank_id, balance, name)
-VALUES (1, 1, 1000.00, 'Savings'), (1, 2, 500.00, 'Checking'), (1, 3, 1500.00, 'Investment'), (1, 4, 750.00, 'Vacation Fund'), (1, 5, 200.00, 'Emergency Fund'), (1, 6, 300.00, 'Daily Expenses'), (1, 7, 1200.00, 'Retirement Fund'), (1, 8, 400.00, 'Education Fund');
+VALUES (1, 1, 1000.00, 'Savings'), (1, 2, 500.00, 'Checking'), (1, 3, 1500.00, 'Investment'), (1, 4, 750.00, 'Vacation Fund'), (1, 5, 200.00, 'Emergency Fund'), (1, 6, 300.00, 'Daily Expenses'), (1, 7, 1200.00, 'Retirement Fund'),
+ (1, 8, 400.00, 'Education Fund'), (1, 1, 600.00, 'Car Fund'), (1, 2, 800.00, 'Home Improvement'), (1, 3, 250.00, 'Gifts'), (1, 4, 900.00, 'Health Savings'), (1, 5, 1100.00, 'Miscellaneous');
